@@ -1,0 +1,17 @@
+version: "3"
+
+services: 
+  accesshttp: 
+    build: 
+      context: .
+      dockerfile: accesshttp.Dockerfile
+    image: viabtc-exchange-server-accesshttp
+    container_name: viabtc-exchange-server-accesshttp
+  
+  accessws: 
+    build: 
+      context: .
+      dockerfile: accessws.Dockerfile
+    image: viabtc-exchange-server-accessws
+    container_name: viabtc-exchange-server-accessws
+   
