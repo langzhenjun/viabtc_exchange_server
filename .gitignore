@@ -181,6 +181,7 @@ target/
 # celery beat schedule file
 celerybeat-schedule
 
+
 # SageMath parsed files
 *.sage.py
 
@@ -524,3 +525,5 @@ paket-files/
 *.cap
 
 # End of https://www.gitignore.io/api/c,vim,python,windows,visualstudio
+
+.vscode/
