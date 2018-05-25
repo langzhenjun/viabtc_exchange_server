@@ -1,10 +1,15 @@
 # build
-FROM debian:jessie
+FROM ubuntu
 
 RUN apt-get update -y && apt-get dist-upgrade -y
-RUN apt-get install -y make gcc libssl-dev
-
-RUN apt-get install -y libev-dev librdkafka-dev libjansson-dev libhiredis-dev libmpdec-dev
+RUN apt-get install -y make gcc
+RUN apt-get install -y libev-dev
+RUN apt-get install -y libhiredis-dev
+RUN apt-get install -y libssl-dev
+RUN apt-get install -y libjansson-dev
+RUN apt-get install -y librdkafka-dev
+RUN apt-get install -y libmpdec-dev
+RUN apt-get install -y libmysqlclient-dev
 
 COPY makefile.inc /root/makefile.inc
 COPY network /root/network

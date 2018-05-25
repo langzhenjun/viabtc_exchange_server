@@ -53,6 +53,12 @@ time_t get_timezone_offset(void);
     } \
 } while (0)
 
+# undef htole16
+# undef htole32
+# undef htole64
+# undef le16toh
+# undef le32toh
+# undef le64toh
 # undef htobe16
 # undef htobe32
 # undef htobe64
